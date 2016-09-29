@@ -1,20 +1,12 @@
+import java.util.Currency;
 
 public class Calculations {
+	
+	private static int saveQuantity;
+	private static double saveSubtotal;
 
-	//declare variables
-//	public int quantity;
-//	public int quantityTotal;
-//	public double lineTotal;
-//	public double subtotal;
-//	public double grandTotal;
-//	public double tax;	
-//	public static int saveItem = 0;
-//	
-	public Calculation (double)
-public double Calculation (double total){
-	double subtotal = sub;
-	saveItem += total;	
-}
+	
+
    //acquire methods for the quantity
 	public int userQuantity(int quantity){
 		return quantity;
@@ -33,6 +25,14 @@ public double Calculation (double total){
 		double grandtotal =(quantity * subtotal * userTax());
 		return grandtotal;
 	}//end of userGrandTotal
-	public int userQuantityTotal(int quatityTotal)
-	int quantityTotal = quatityTotal * int userQuantity(); 
+	
+	public static int saveUserQuantity(){
+	return saveQuantity;
+	}
+	public static double saveUsersubtotal(){
+	return saveSubtotal;
+	}
+
+	
+	
 }//end of class
