@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainApp {
@@ -13,6 +14,19 @@ public class MainApp {
 		
 		//created Product object
 		Product p = new Product (name, category, description, price);
+		
+		//create Arraylist
+//		ArrayList<String> name = new Arraylist <String> (String number, String title);
+		ArrayList<Product> products = new ArrayList <Product>();
+		Products.add(new Product("Delight Dry" "Dry food", 5.00));
+		Products.add(new Product("Moist Delight", "Canned food", 5.00));
+		Products.add(new Product("Organic Delight", "Organic food", 10.00));
+		Products.add(new Product("Puppy Delight", "Puppy food", 5.00));
+		Products.add(new Product("Delightful Treats", "Treats", 3.00));
+		Products.add(new Product("Good Bone", "Dog bone", 2.00));
+		Products.add(new Product("Blush Winter Coat","Red" ));
+		Products.add(new Product("Winter Coat ")
+		
 		
 		
 		
