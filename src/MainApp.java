@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class MainApp {
 
@@ -7,6 +8,11 @@ public class MainApp {
 		System.out.println("Welcome to PopUpPup!!! Please browse our menu: ");
 		
 		System.out.println();
+		
+		Scanner sc = new Scanner(System.in); 
+		
+		//created Product object
+		Product p = new Product (name, category, description, price);
 		
 		
 		
