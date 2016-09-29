@@ -1,7 +1,8 @@
 import java.util.Currency;
+import java.util.Scanner;
 
 public class Calculations {
-	
+	Scanner sc = new Scanner (System.in);
 	private static int saveQuantity;
 	private static double saveSubtotal;
 
@@ -26,14 +27,19 @@ public class Calculations {
 		return grandtotal;
 	}//end of userGrandTotal
 	
+	//captures and saves the quantity of the items
 	public static int saveUserQuantity(){
 	return saveQuantity;
 	}
+	//captures and saves the subtotal
 	public static double saveUsersubtotal(){
 	return saveSubtotal;
 	}
-	public double userChange(){
-		double change = (sc - grandtotal);
+	//Get user input for payment methods and establish change
+	public double userChange(double x, double grandTotal){
+		
+		
+		double change = ( sc.nextDouble()- grandTotal);
 		return change;
 	}
 
