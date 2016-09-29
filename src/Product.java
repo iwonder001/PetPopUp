@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 
 public class Product {
 
@@ -27,27 +28,33 @@ public class Product {
 		itemName = n;
 	}
 
-	//the get method for the category variable
+	// the get method for the category variable
 	public String getCategory() {
 		return category;
 	}
 
-	//the get method for the description variable
+	// the get method for the description variable
 	public String getDescription() {
 		return description;
 	}
 
-	//the get method for the description variable
+	// the get method for the description variable
 	public double getItemPrice() {
 		return itemPrice;
 	}
 
-	//the get and set methods for the quantity variable
+	// the get and set methods for the quantity variable
 	public int getQuantity() {
 		return quantity;
 	}
 
 	public void setQuantity(int userQuantity) {
 		userQuantity = quantity;
+	}
+
+	// a custom method for the number variable
+	public String formatNumber(double x) {
+		String formattedNumber = String.format("%,.2f", x);
+		return formattedNumber;
 	}
 }
