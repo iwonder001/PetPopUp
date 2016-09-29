@@ -1,0 +1,4 @@
+.ds_store
+bin/
+.settings/
+.DS_Store
