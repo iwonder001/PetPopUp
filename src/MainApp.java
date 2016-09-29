@@ -16,30 +16,39 @@ public class MainApp {
 		Scanner sc = new Scanner(System.in); 
 		
 		//created Product object
-		Product p = new Product (name, category, description, price);
 		
 		//create Arraylist
 //		ArrayList<String> name = new Arraylist <String> (String number, String title);
 		ArrayList<Product> products = new ArrayList <Product>();
-		Products.add(new Product("Delight Dry" "Dry food", 5.00));
-		Products.add(new Product("Moist Delight", "Canned food", 5.00));
-		Products.add(new Product("Organic Delight", "Organic food", 10.00));
-		Products.add(new Product("Puppy Delight", "Puppy food", 5.00));
-		Products.add(new Product("Delightful Treats", "Treats", 3.00));
-		Products.add(new Product("Good Bone", "Dog bone", 2.00));
-		Products.add(new Product("Blush Winter Coat","Red Sweater", 20.00 ));
-		Products.add(new Product("Pale Winter Coat", "Pink Sweater", 20.00));
-		Products.add(new Product("Grass Winter Coat","Green Sweater", 20.00));
-		Products.add(new Product("Night Winter Coat", "Black Sweater", 20.00));
-		Products.add(new Products("Daisy Winter Coat", "Yellow Sweater", 20.00));
-		Products.add(new Products("Citrus Winter", "Orange Sweater", 20.00));
+		products.add(new Product("Delight Dry","food" , "Dry food", 5.00));
+		products.add(new Product("Moist Delight","food" , "Canned food", 5.00));
+		products.add(new Product("Organic Delight", "food" ,"Organic food", 10.00));
+		products.add(new Product("Puppy Delight","food", "Puppy food", 5.00));
+		products.add(new Product("Delightful Treats","food", "Treats", 3.00));
+		products.add(new Product("Good Bone", "food" ,"Dog bone", 2.00));
+		products.add(new Product("Blush Winter Coat","" ,"Red", 20.00 ));
+		products.add(new Product("Pale Winter Coat","Sweater", "Pink", 20.00));
+		products.add(new Product("Grass Winter Coat","Sweater","Green", 20.00));
+		products.add(new Product("Night Winter Coat","Sweater", "Black", 20.00));
+		products.add(new Product("Daisy Winter Coat","Sweater", "Yellow", 20.00));
+		products.add(new Product("Citrus Winter","Sweater","Orange", 20.00));
 		
 		while (cont.equalsIgnoreCase("y")) {
 			
+			System.out.println("Are you shopping for dog food or a warm dog sweater? Press 1 for dog food, 2 for dog sweater: ");
+			int categoryChoice = sc.nextInt();
 			
-			
-			
-			
+			for(int i=0; i<products.size(); i++){
+				
+				products.get(i);
+				if(categoryChoice==1){
+					if(products.get(i).getCategory()== "food"){
+						System.out.println(products.get(i));
+					}
+					
+				}
+				
+			}
 			
 			
 			
