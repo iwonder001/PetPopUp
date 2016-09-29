@@ -32,6 +32,10 @@ public class Calculations {
 	public static double saveUsersubtotal(){
 	return saveSubtotal;
 	}
+	public double userChange(){
+		double change = (sc - grandtotal);
+		return change;
+	}
 
 	
 	
