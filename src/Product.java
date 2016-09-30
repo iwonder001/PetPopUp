@@ -46,4 +46,9 @@ public class Product {
 		String formattedNumber = String.format("%,.2f", x);
 		return formattedNumber;
 	}
+	// pass the getArea method into the formatting
+		public String getFormattedItemPrice() {
+			String myItemPrice = formatNumber(getItemPrice());
+			return myItemPrice;
+		}
 }

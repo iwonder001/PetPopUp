@@ -47,7 +47,7 @@ public class MainApp {
 				products.get(i);
 				if(categoryChoice==1){
 					if(products.get(i).getCategory().contentEquals("  Food")){
-						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getItemPrice());
+						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
 						//System.out.println("");
 					}//Second if loop close
 					
