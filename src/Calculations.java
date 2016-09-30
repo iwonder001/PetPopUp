@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.Currency;
 import java.util.Scanner;
 
 public class Calculations {
 	Scanner sc = new Scanner (System.in);
 	public double counter;
-	private Object ShoppingCart;
+	public double ShoppingCart;
 	public static double saveSubtotal;
 
 	
@@ -37,10 +38,14 @@ public class Calculations {
 	
 		//shopping cart methods
 		
-		public static double CartTotal(){
-		for( int i = 0; i < shoppingCart.size; i++){
-			shoppingCart.get(i).getItemPrice;
+		public static double CartTotal(ArrayList<Product> shoppingCart){
+			double cartTotal=0;
+			for( int i = 0; i < shoppingCart.size(); i++){
+			shoppingCart.get(i).getItemPrice();
+			
 		}	
+			return cartTotal ;
+			cartTotal += 
 		}
 		
 	
