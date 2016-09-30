@@ -6,7 +6,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		
 		//greeting 
-		System.out.println("Welcome to PopUpPup!!! Please browse our menu: ");
+		System.out.println("Welcome to PopUpPup!!!");
 		
 		System.out.println();
 		//while loop variables
@@ -21,18 +21,21 @@ public class MainApp {
 		
 		//create Arraylist
 		ArrayList<Product> products = new ArrayList <Product>();
-		products.add(new Product("Delight Dry","food" , "Dry food", 5.00));
-		products.add(new Product("Moist Delight","food" , "Canned food", 5.00));
-		products.add(new Product("Organic Delight", "food" ,"Organic food", 10.00));
-		products.add(new Product("Puppy Delight","food", "Puppy food", 5.00));
-		products.add(new Product("Delightful Treats","food", "Treats", 3.00));
-		products.add(new Product("Good Bone", "food" ,"Dog bone", 2.00));
-		products.add(new Product("Blush Winter Coat","" ,"Red", 20.00 ));
-		products.add(new Product("Pale Winter Coat","Sweater", "Pink", 20.00));
-		products.add(new Product("Grass Winter Coat","Sweater","Green", 20.00));
-		products.add(new Product("Night Winter Coat","Sweater", "Black", 20.00));
-		products.add(new Product("Daisy Winter Coat","Sweater", "Yellow", 20.00));
-		products.add(new Product("Citrus Winter","Sweater","Orange", 20.00));
+		products.add(new Product("Delight Dry      ","  Food",   "  Dry food     ", 5.00));
+		products.add(new Product("Moist Delight    ","  Food" ,  "  Canned food  ", 5.00));
+		products.add(new Product("Organic Delight  ","  Food" ,  "  Organic food ", 10.00));
+		products.add(new Product("Puppy Delight    ","  Food",   "  Puppy food   ", 5.00));
+		products.add(new Product("Delightful Treats","  Food",   "  Treats       ", 3.00));
+		products.add(new Product("Good Bone        ","  Food" ,  "  Dog bone     ", 2.00));
+		products.add(new Product("Blush Winter Coat","  Sweater","  Red          ", 20.00 ));
+		products.add(new Product("Pale Winter Coat ","  Sweater","  Pink         ", 20.00));
+		products.add(new Product("Grass Winter Coat","  Sweater","  Green        ", 20.00));
+		products.add(new Product("Night Winter Coat","  Sweater","  Black        ", 20.00));
+		products.add(new Product("Daisy Winter Coat","  Sweater","  Yellow       ", 20.00));
+		products.add(new Product("Citrus Winter    ","  Sweater","  Orange       ", 20.00));
+		
+		ArrayList<Product> shoppingCart = new ArrayList <>();
+		
 		
 		while (cont) {
 			
@@ -43,8 +46,9 @@ public class MainApp {
 				
 				products.get(i);
 				if(categoryChoice==1){
-					if(products.get(i).getCategory()== "food"){
-						System.out.println(products.get(i));
+					if(products.get(i).getCategory().contentEquals("  Food")){
+						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getItemPrice());
+						//System.out.println("");
 					}//Second if loop close
 					
 				}//first if loop close

@@ -7,7 +7,6 @@ public class Product {
 	public String category;
 	public String description;
 	public double itemPrice;
-	public int quantity;
 
 	// the constructor
 	public Product(String n, String c, String d, double p) {
@@ -16,7 +15,6 @@ public class Product {
 		category = c;
 		description = d;
 		itemPrice = p;
-		quantity = 0;
 	}
 
 	// the get and set methods for the item name variable
