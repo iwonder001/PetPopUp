@@ -63,6 +63,7 @@ public class MainApp {
 			}//first for loop close
 			if (categoryChoice==1){
 				System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone.");
+			
 			}else{
 				System.out.println("Please press 7 for Blush Winter Coat, 8 for Pale Winter Coat, 9 for Grass Winter Coat, 10 for Night Winter Coat, 11 for Daisy Winter Coat, 12 for Peach Winter Coat.");
 			}
@@ -77,7 +78,7 @@ public class MainApp {
 
 			// If the user says yes cont = true
 			// Else cont = false
-			if (userCont.equalsIgnoreCase("y")) {
+			if (userCont.equalsIgnoreCase("n")) {
 				cont = true;
 
 			} else {
