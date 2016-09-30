@@ -1,4 +1,4 @@
-import java.text.NumberFormat;
+
 
 public class Product {
 
@@ -41,15 +41,6 @@ public class Product {
 	// the get method for the description variable
 	public double getItemPrice() {
 		return itemPrice;
-	}
-
-	// the get and set methods for the quantity variable
-	public int getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(int userQuantity) {
-		userQuantity = quantity;
 	}
 
 	// a custom method for the number variable
