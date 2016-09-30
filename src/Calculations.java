@@ -3,36 +3,28 @@ import java.util.Scanner;
 
 public class Calculations {
 	Scanner sc = new Scanner (System.in);
-	private static int saveQuantity;
-	private static double saveSubtotal;
+	public double counter;
+	private Object ShoppingCart;
+	public static double saveSubtotal;
 
 	
-
-   //acquire methods for the quantity
-	public int userQuantity(int quantity){
-		return quantity;
-		
-	}//end of userQuantity
-	public double userSubtotal(double subtotal){
-		return subtotal;
-		
+	public double productCount(double x){
+		return counter++;
 	}//end of userSubtotal
+	
 	public double userTax(){
 		double tax = (1.05);
 		return tax;
 		
 	}// end of user tax
-	public double userGrandTotal(int quantity, double subtotal){
-		double grandtotal =(quantity * subtotal * userTax());
+	
+	public double userGrandTotal(double subtotal){
+		double grandtotal =(subtotal * userTax());
 		return grandtotal;
 	}//end of userGrandTotal
 	
-	//captures and saves the quantity of the items
-	public static int saveUserQuantity(){
-	return saveQuantity;
-	}
 	//captures and saves the subtotal
-	public static double saveUsersubtotal(){
+	public static double getUsersubtotal(){
 	return saveSubtotal;
 	}
 	//Get user input for payment methods and establish change
@@ -42,7 +34,15 @@ public class Calculations {
 		double change = ( sc.nextDouble()- grandTotal);
 		return change;
 	}
-
+	
+		//shopping cart methods
+		
+		public static double CartTotal(){
+		for( int i = 0; i < shoppingCart.size; i++){
+			shoppingCart.get(i).getItemPrice;
+		}	
+		}
+		
 	
 	
 }//end of class
