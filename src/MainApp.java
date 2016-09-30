@@ -35,7 +35,15 @@ public class MainApp {
 		products.add(new Product("Peach Winter Coat","  Sweater","  Orange       ", 20.00));
 		
 		ArrayList<Product> shoppingCart = new ArrayList <>();
+		//test
+//		shoppingCart.add(products.get(0));
+//		shoppingCart.add(new Product("Daisy Winter Coat","  Sweater","  Yellow       ", 20.00));
+//		shoppingCart.add(new Product("Peach Winter Coat","  Sweater","  Orange       ", 20.00));
+//		
+//		System.out.println(Calculations.CartTotal(shoppingCart));
+//		author Armani--
 		
+		//test
 		
 		while (cont) {
 			
@@ -65,10 +73,18 @@ public class MainApp {
 				System.out.println("Please press 7 for Blush Winter Coat, 8 for Pale Winter Coat, 9 for Grass Winter Coat, 10 for Night Winter Coat, 11 for Daisy Winter Coat, 12 for Peach Winter Coat.");
 			}
 			int numberChoice = input.nextInt(); //user input for choosing number for item for food or sweater
+<<<<<<< Updated upstream
 			
 			shoppingCart = addToCart(numberChoice, shoppingCart, products);
 			
 			//Ask if want to check out 
+=======
+			Calculations.addToCart(numberChoice, shoppingCart, products);
+			for(int i = 0; i<shoppingCart.size(); i++){
+			System.out.println(shoppingCart.get(i).getItemName());
+			}
+			//Ask to check out 
+>>>>>>> Stashed changes
 			System.out.println("Check out? (y/n):");
 			userCont = input.nextLine();
 			userCont = input.nextLine();
