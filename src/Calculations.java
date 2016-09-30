@@ -43,9 +43,10 @@ public class Calculations {
 			for( int i = 0; i < shoppingCart.size(); i++){
 			shoppingCart.get(i).getItemPrice();
 			
+			cartTotal += shoppingCart.get(i).getItemPrice();
+ 
 		}	
 			return cartTotal ;
-			cartTotal += 
 		}
 		
 	
