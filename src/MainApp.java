@@ -92,13 +92,18 @@ public class MainApp {
 			// Else cont = false
 			if (userCont.equalsIgnoreCase("n")) {
 				cont = true;
-
 			} else {
 				cont = false;
-				System.out.println("Thank you for checking out, your total is: "   );
+				System.out.println("Thank you for checking out, your total is: " + Calculations.userGrandTotal(shoppingCart) );
 				System.out.println();
 				System.out.println("Please select 1 for Cash, 2 for Credit or 3 for Check");
 				int paymentMethod = input.nextInt();
+				System.out.println("How much cash?");
+				double cashTendered = input.nextDouble();
+				System.out.println("You got " + Calculations.userChange(cashTendered, shoppingCart) + " as your change");
+				System.out.println();
+				System.out.println("Here is your reciept: ");
+				System.out.println(Calculations.userReciept(shoppingCart));
 			} // if/else statement
 		}//while loop close
 			

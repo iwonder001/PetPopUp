@@ -3,21 +3,21 @@ import java.util.Currency;
 import java.util.Scanner;
 
 public class Calculations {
-	Scanner sc = new Scanner (System.in);
-	public double counter;
-	public double ShoppingCart;
+//	Scanner sc = new Scanner (System.in);
+//	public double counter;
+//	public double ShoppingCart;
 	
-	public double productCount(double x){
-		return counter++;
-	}//end of userSubtotal
+//	public double productCount(double x){
+//		return counter++;
+//	}//end of userSubtotal
 	
-	public double userTax(){
+	public static double userTax(){
 		double tax = (1.05);
 		return tax;
 		
 	}// end of user tax
 	
-	public double userGrandTotal(ArrayList<Product> shoppingCart){
+	public static double userGrandTotal(ArrayList<Product> shoppingCart){
 		double subtotal =CartTotal(shoppingCart);
 		
 		double grandtotal =(subtotal * userTax());
@@ -26,7 +26,7 @@ public class Calculations {
 	
 
 	//Get user input for payment methods and establish change
-	public double userChange(double cashTendered, ArrayList<Product> shoppingCart){
+	public static double userChange(double cashTendered, ArrayList<Product> shoppingCart){
 		double grandTotal = userGrandTotal(shoppingCart);
 		double change = ( cashTendered - grandTotal);
 		return change;
@@ -100,15 +100,15 @@ public class Calculations {
         }
         return shoppingCart;
         }
-	public String userReciept(ArrayList<Product>shoppingCart){
+		
+	public static String userReciept(ArrayList<Product>shoppingCart){
 		String reciept = "";
 		for( int i = 0; i < shoppingCart.size(); i++){
 			String name =shoppingCart.get(i).getItemName();
 			double price = shoppingCart.get(i).getItemPrice();
 			reciept+= (name+ price);
- 
-		
 	}
 		return reciept;
-		
-}}//end of class
+	
+}
+	}//end of class
