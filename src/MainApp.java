@@ -44,21 +44,18 @@ public class MainApp {
 			
 			for(int i=0; i<products.size(); i++){
 				
-				products.get(i);
+				//products.get(i);
 				if(categoryChoice==1){
 					if(products.get(i).getCategory().contentEquals("  Food")){
 						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
+					}//second if close
 					
-					} 
-					//System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone");
 				}else {
 						
-						if(products.get(i).getCategory().contentEquals("  Sweater"));
+						if(products.get(i).getCategory().contentEquals("  Sweater")){
 						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
-						
-					}//Second if loop close
-					
-				//first if loop close
+						}//third if close
+					}//first if/else close 
 				
 			}//first for loop close
 			if (categoryChoice==1){
@@ -71,12 +68,12 @@ public class MainApp {
 			
 			
 			
-			//Ask to check out 
+			//Ask if want to check out 
 			System.out.println("Check out? (y/n):");
 			userCont = input.nextLine();
 			userCont = input.nextLine();
 
-			// If the user says yes cont = true
+			// If the user says no cont = true
 			// Else cont = false
 			if (userCont.equalsIgnoreCase("n")) {
 				cont = true;
@@ -85,10 +82,7 @@ public class MainApp {
 				cont = false;
 			} // if/else statement
 		}//while loop close
-		
-		
-		
-		
+			
 
 	}//close psvm
 
