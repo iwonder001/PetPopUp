@@ -66,7 +66,7 @@ public class MainApp {
 			}
 			int numberChoice = input.nextInt(); //user input for choosing number for item for food or sweater
 			
-			
+			shoppingCart = addToCart(numberChoice, shoppingCart, products);
 			
 			//Ask if want to check out 
 			System.out.println("Check out? (y/n):");
