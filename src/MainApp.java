@@ -48,13 +48,13 @@ public class MainApp {
 				if(categoryChoice==1){
 					if(products.get(i).getCategory().contentEquals("  Food")){
 						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
-						//System.out.println("");
+					
 					}//Second if loop close
 					
 				}//first if loop close
 				
 			}//first for loop close
-			
+			System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone");
 			
 			
 			
