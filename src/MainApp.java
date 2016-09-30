@@ -74,10 +74,14 @@ public class MainApp {
 			}
 			int numberChoice = input.nextInt(); //user input for choosing number for item for food or sweater
 
-
 			Calculations.addToCart(numberChoice, shoppingCart, products);
 			for(int i = 0; i<shoppingCart.size(); i++){
-			System.out.println(shoppingCart.get(i).getItemName());
+			System.out.print(shoppingCart.get(i).getItemName());
+			System.out.print(shoppingCart.get(i).getCategory());
+			System.out.print(shoppingCart.get(i).getDescription());
+			System.out.print(shoppingCart.get(i).getItemPrice());
+			System.out.println();
+
 			}
 			//Ask to check out 
 			System.out.println("Check out? (y/n):");
@@ -91,8 +95,8 @@ public class MainApp {
 
 			} else {
 				cont = false;
-				System.out.println("Thank you for checking out, your total is: " + );
-				
+				System.out.println("Thank you for checking out, your total is: "   );
+				System.out.println();
 				System.out.println("Please select 1 for Cash, 2 for Credit or 3 for Check");
 				int paymentMethod = input.nextInt();
 			} // if/else statement

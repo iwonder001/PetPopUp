@@ -6,8 +6,6 @@ public class Calculations {
 	Scanner sc = new Scanner (System.in);
 	public double counter;
 	public double ShoppingCart;
-	public static double saveSubtotal;
-
 	
 	public double productCount(double x){
 		return counter++;
@@ -19,20 +17,18 @@ public class Calculations {
 		
 	}// end of user tax
 	
-	public double userGrandTotal(double subtotal){
+	public double userGrandTotal(ArrayList<Product> shoppingCart){
+		double subtotal =CartTotal(shoppingCart);
+		
 		double grandtotal =(subtotal * userTax());
 		return grandtotal;
 	}//end of userGrandTotal
 	
-	//captures and saves the subtotal
-	public static double getUsersubtotal(){
-	return saveSubtotal;
-	}
+
 	//Get user input for payment methods and establish change
-	public double userChange(double x, double grandTotal){
-		
-		
-		double change = ( sc.nextDouble()- grandTotal);
+	public double userChange(double cashTendered, ArrayList<Product> shoppingCart){
+		double grandTotal = userGrandTotal(shoppingCart);
+		double change = ( cashTendered - grandTotal);
 		return change;
 	}
 	
@@ -104,5 +100,15 @@ public class Calculations {
         }
         return shoppingCart;
         }
-	
-}//end of class
+	public String userReciept(ArrayList<Product>shoppingCart){
+		String reciept = "";
+		for( int i = 0; i < shoppingCart.size(); i++){
+			String name =shoppingCart.get(i).getItemName();
+			double price = shoppingCart.get(i).getItemPrice();
+			reciept+= (name+ price);
+ 
+		
+	}
+		return reciept;
+		
+}}//end of class
