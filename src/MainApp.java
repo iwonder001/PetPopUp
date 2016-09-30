@@ -91,6 +91,10 @@ public class MainApp {
 
 			} else {
 				cont = false;
+				System.out.println("Thank you for checking out, your total is: " + );
+				
+				System.out.println("Please select 1 for Cash, 2 for Credit or 3 for Check");
+				int paymentMethod = input.nextInt();
 			} // if/else statement
 		}//while loop close
 			
