@@ -28,11 +28,11 @@ public class MainApp {
 		products.add(new Product("Delightful Treats","  Food",   "  Treats       ", 3.00));
 		products.add(new Product("Good Bone        ","  Food" ,  "  Dog bone     ", 2.00));
 		products.add(new Product("Blush Winter Coat","  Sweater","  Red          ", 20.00 ));
-		products.add(new Product("Pale Winter Coat ","  Sweater","  Pink         ", 20.00));
+		products.add(new Product("Pale  Winter Coat","  Sweater","  Pink         ", 20.00));
 		products.add(new Product("Grass Winter Coat","  Sweater","  Green        ", 20.00));
 		products.add(new Product("Night Winter Coat","  Sweater","  Black        ", 20.00));
 		products.add(new Product("Daisy Winter Coat","  Sweater","  Yellow       ", 20.00));
-		products.add(new Product("Citrus Winter    ","  Sweater","  Orange       ", 20.00));
+		products.add(new Product("Peach Winter Coat","  Sweater","  Orange       ", 20.00));
 		
 		ArrayList<Product> shoppingCart = new ArrayList <>();
 		
@@ -49,13 +49,24 @@ public class MainApp {
 					if(products.get(i).getCategory().contentEquals("  Food")){
 						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
 					
+					} 
+					//System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone");
+				}else {
+						
+						if(products.get(i).getCategory().contentEquals("  Sweater"));
+						System.out.println(products.get(i).getItemName() + products.get(i).getCategory() + products.get(i).getDescription() + products.get(i).getFormattedItemPrice());
+						
 					}//Second if loop close
 					
-				}//first if loop close
+				//first if loop close
 				
 			}//first for loop close
-			System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone");
-			
+			if (categoryChoice==1){
+				System.out.println("Please press 1 for Delight Dry, 2 for Moist Delight, 3 for Organic Delight, 4 for Puppy Delight, 5 for Delightful Treats, 6 for Good Bone.");
+			}else{
+				System.out.println("Please press 7 for Blush Winter Coat, 8 for Pale Winter Coat, 9 for Grass Winter Coat, 10 for Night Winter Coat, 11 for Daisy Winter Coat, 12 for Peach Winter Coat.");
+			}
+			int numberChoice = input.nextInt(); //user input for choosing number for item for food or sweater
 			
 			
 			
