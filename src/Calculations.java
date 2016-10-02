@@ -111,6 +111,6 @@ public class Calculations {
 		return receipt;
 	
 
-	}
+	}//end of userReciept
 	
 	}//end of class

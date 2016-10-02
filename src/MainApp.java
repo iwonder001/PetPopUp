@@ -113,6 +113,7 @@ public class MainApp {
 				case 2: //credit
 					System.out.println("Please enter your credit card number:");
 					String creditNumber = input.nextLine();
+					input.nextLine();
 					System.out.println("Please enter your expiration date: ");
 					String creditExp = input.nextLine();
 					System.out.println("Please enter your CVV number: ");
@@ -125,6 +126,7 @@ public class MainApp {
 				case 3: //check
 					System.out.println("Please enter your check number: ");
 					String checkNumber = input.nextLine();
+					input.nextLine();
 					System.out.println("Your check has cleared. Here is your receipt: ");
 					System.out.println(Calculations.userReceipt(shoppingCart));
 					
