@@ -101,14 +101,16 @@ public class Calculations {
         return shoppingCart;
         }
 		
-	public static String userReciept(ArrayList<Product>shoppingCart){
-		String reciept = "";
+	public static String userReceipt(ArrayList<Product>shoppingCart){
+		String receipt = "";
 		for( int i = 0; i < shoppingCart.size(); i++){
 			String name =shoppingCart.get(i).getItemName();
 			double price = shoppingCart.get(i).getItemPrice();
-			reciept+= (name+ price);
+			receipt+= (name+ price);
 	}
-		return reciept;
+		return receipt;
 	
-}
+
+	}
+	
 	}//end of class

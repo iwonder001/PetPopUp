@@ -98,12 +98,43 @@ public class MainApp {
 				System.out.println();
 				System.out.println("Please select 1 for Cash, 2 for Credit or 3 for Check");
 				int paymentMethod = input.nextInt();
-				System.out.println("How much cash?");
-				double cashTendered = input.nextDouble();
-				System.out.println("You got " + Calculations.userChange(cashTendered, shoppingCart) + " as your change");
-				System.out.println();
-				System.out.println("Here is your reciept: ");
-				System.out.println(Calculations.userReciept(shoppingCart));
+				
+				switch (paymentMethod) {
+				
+				case 1: //cash
+
+					System.out.println("How much cash?");
+					double cashTendered = input.nextDouble();
+					System.out.println("You got " + Calculations.userChange(cashTendered, shoppingCart) + " as your change");
+					System.out.println();
+					System.out.println("Here is your receipt: ");
+					System.out.println(Calculations.userReceipt(shoppingCart));
+				   break;
+				case 2: //credit
+					System.out.println("Please enter your credit card number:");
+					String creditNumber = input.nextLine();
+					System.out.println("Please enter your expiration date: ");
+					String creditExp = input.nextLine();
+					System.out.println("Please enter your CVV number: ");
+					String creditBack = input.nextLine();
+					System.out.println("Thank you for entering your credit card information. Here is your receipt: ");
+					System.out.println(Calculations.userReceipt(shoppingCart));
+					
+					break;
+						
+				case 3: //check
+					System.out.println("Please enter your check number: ");
+					String checkNumber = input.nextLine();
+					System.out.println("Your check has cleared. Here is your receipt: ");
+					System.out.println(Calculations.userReceipt(shoppingCart));
+					
+					break;
+					
+					
+				}
+				
+				System.out.println("THANK YOU FOR SHOPPING AT PopUpPup!!");
+				
 			} // if/else statement
 		}//while loop close
 			
