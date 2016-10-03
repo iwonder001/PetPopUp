@@ -79,7 +79,7 @@ public class MainApp {
 			System.out.print(shoppingCart.get(i).getItemName());
 			System.out.print(shoppingCart.get(i).getCategory());
 			System.out.print(shoppingCart.get(i).getDescription());
-			System.out.print(shoppingCart.get(i).getItemPrice());
+            System.out.print(shoppingCart.get(i).getFormattedItemPrice());
 			System.out.println();
 
 			}
