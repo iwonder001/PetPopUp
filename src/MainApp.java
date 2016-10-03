@@ -105,7 +105,7 @@ public class MainApp {
 
 					System.out.println("How much cash?");
 					double cashTendered = input.nextDouble();
-					System.out.println("You got " + Calculations.userChange(cashTendered, shoppingCart) + " as your change");
+					System.out.println("You got $" + Calculations.userChange(cashTendered, shoppingCart) + " as your change");
 					System.out.println();
 					System.out.println("Here is your receipt: ");
 					System.out.println(Calculations.userReceipt(shoppingCart));

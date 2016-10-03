@@ -105,7 +105,7 @@ public class Calculations {
 		String receipt = "";
 		for( int i = 0; i < shoppingCart.size(); i++){
 			String name =shoppingCart.get(i).getItemName();
-			double price = shoppingCart.get(i).getItemPrice();
+			String price = Product.formatNumber(shoppingCart.get(i).getItemPrice());	
 			receipt+= (name+ price);
 	}
 		return receipt;

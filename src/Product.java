@@ -42,7 +42,7 @@ public class Product {
 	}
 
 	// a custom method for the number variable
-	public String formatNumber(double x) {
+	public static String formatNumber(double x) {
 		String formattedNumber = String.format("%,.2f", x);
 		return formattedNumber;
 	}
