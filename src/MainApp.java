@@ -16,6 +16,7 @@ public class MainApp {
 		// variable to true
 		
 		Scanner input = new Scanner(System.in); 
+		double j =0;
 		
 		//created Product object
 		
@@ -35,20 +36,12 @@ public class MainApp {
 		products.add(new Product("Peach Winter Coat","  Sweater","  Orange       ", 20.00));
 		
 		ArrayList<Product> shoppingCart = new ArrayList <>();
-		//test
-//		shoppingCart.add(products.get(0));
-//		shoppingCart.add(new Product("Daisy Winter Coat","  Sweater","  Yellow       ", 20.00));
-//		shoppingCart.add(new Product("Peach Winter Coat","  Sweater","  Orange       ", 20.00));
-//		
-//		System.out.println(Calculations.CartTotal(shoppingCart));
-//		author Armani--
-		
-		//test
+	
 		
 		while (cont) {
-			
 			System.out.println("Are you shopping for dog food or a warm dog sweater? Press 1 for dog food, 2 for dog sweater: ");
 			int categoryChoice = input.nextInt();
+			
 			
 			for(int i=0; i<products.size(); i++){
 				
